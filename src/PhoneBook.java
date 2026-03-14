@@ -9,16 +9,27 @@ public class PhoneBook {
     }
 
     public void showPBook(){
-        for(Contact c : pBook){
-            c.display();
+        if(pBook.isEmpty()){
+            System.out.println("Danh sach trong! ");
+        }
+        else {
+            System.out.println("-----DANH SACH LIEN HE-----");
+            for (Contact c : pBook) {
+                c.display();
+            }
         }
     }
 
     public void searchPBook(String name){
+        boolean f = false;
         for(Contact c : pBook){
             if( c.getName().equals(name)){
                 c.display();
+                f = true;
             }
+        }
+        if(f == false){
+            System.out.println("Khong tim thay lien he.");
         }
     }
 }
