@@ -28,7 +28,7 @@ public class PhoneBook {
                 f = true;
             }
         }
-        if(f == false){
+        if(!f){
             System.out.println("Khong tim thay lien he.");
         }
     }
