@@ -8,11 +8,12 @@ public class Main{
         int num;
 
         do {
-            System.out.println("\n-----MENU-----");
+            System.out.println("\n-------MENU-------");
             System.out.println("\n1. Them lien he moi.");
             System.out.println("2. Xem toan bo danh ba.");
             System.out.println("3. Tim kiem danh ba.");
             System.out.println("4. Thoat MENU.");
+            System.out.println("Hay nhap yeu cau.");
             num = sc.nextInt();
             sc.nextLine();
 
